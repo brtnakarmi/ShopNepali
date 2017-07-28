@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    height: 100%;
+}
+body {
+    font-family: verdana;
+}
+.app-content {
+    min-height: 100%;
+    margin-bottom: -60px;
+    height: auto !important;
+    height: 100%;
+}
+header {
+    position: absolute;
+    height: 60px;
+    width: 100%;
+    background-color: rgb(23, 179, 116);
+    -webkit-box-shadow: 0 3px 5px rgba(100, 100, 100, 0.49);
+    -moz-box-shadow: 0 3px 5px rgba(100, 100, 100, 0.49);
+    box-shadow: 0 3px 5px rgba(100, 100, 100, 0.49);
+}
+.app-container {
+    width: 75%;
+    margin: 0 auto;
+}
+header h3 {
+    float: left;
+    height: 60px;
+    margin: 0;
+    color: #FFF;
+    line-height: 60px;
+}
+header nav {
+    float: right;
+}
+ul.primary-menu, ul.primary-sub-menu, ul.secondary-sub-menu {
+    list-style: none;
+}
+ul.primary-menu {
+    height: 60px;
+    width: 100%;
+}
+ul.primary-menu li {
+    position: relative;
+    float: left;
+    height: 60px;
+    width: 125px;
+    text-align: center;
+}
+ul.primary-menu a {
+    display: block;
+    height: 60px;
+    width: 125px;
+    font-size: 10pt;
+    color: #FFF;
+    line-height: 60px;
+    text-decoration: none;
+}
+ul.primary-menu li:hover> a {
+    background: #4b545f;
+    background: linear-gradient(top, #4f5964 0%, #5f6975 40%);
+    background: -moz-linear-gradient(top, #4f5964 0%, #5f6975 40%);
+    background: -webkit-linear-gradient(top, #4f5964 0%, #5f6975 40%);
+}
+ul.primary-menu ul.primary-sub-menu {
+    position: absolute;
+    display: none;
+    top: 60px;
+    left: 0;
+    background-color: #5f6975;
+}
+ul.primary-menu ul.primary-sub-menu li {
+    border-top: 1px solid #6b727c;
+    border-bottom: 1px solid #575f6a;
+}
+ul.primary-menu ul.secondary-sub-menu {
+    position: absolute;
+    display: none;
+    top: 0;
+    left: 125px;
+    background-color: #5f6975;
+}
+ul.primary-menu li a:hover {
+    background: #4b545f;
+}
+ul.primary-menu li:hover .primary-sub-menu {
+    display: block;
+}
+ul.primary-menu .primary-sub-menu li:hover .secondary-sub-menu {
+    display: block;
+}
+.down-arrow, .right-arrow {
+    position: absolute;
+    top: 23px;
+    right: 10px;
+    color: #FFF;
+}
+.down-arrow {
+    top: 23px;
+}
+.right-arrow {
+    top: 25px;
+}
+footer, .push {
+    height: 60px;
+    position: fixed;
+    //position: absolute;
+    width: 100%;
+}
+footer {
+    background-color: rgb(23, 179, 116);
+    color: #FFF;
+    height: 60px;
+    font-size: 8pt;
+    bottom: 0px;
+}
+.social-media, .copy-right, .policies {
+    line-height: 60px;
+}
+.copy-right {
+    text-align: left;
+}
+.policies {
+    text-align: right;
+}
+.policies a {
+    color: #FFF;
+    text-decoration: none;
+}
+.policies a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+@media only screen and (max-width: 1042px) {
+.app-container{
+width : 100%;
+}
+header h3 {
+margin-left : 10px;
+}
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+header h3{
+font-size: 14pt;
+}
+}
+
+@media only screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio :2){
+header h3{
+width : 100%;
+text-align: center;
+margin: 0;
+outline : 1px solid red;
+
+}
+
+ul.primary-menu li{
+display: block;
+width: 100%;
+outline; 1px solid red;
+text-align:left;
+}
+
+ul.primary-menu a{
+color: #000;
+}
+}
