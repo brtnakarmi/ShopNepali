@@ -1,5 +1,5 @@
 (function() {
-	//app initialization
+	//app initialization 
 
 	'use strict';
 
